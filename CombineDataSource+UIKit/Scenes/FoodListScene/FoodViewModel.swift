@@ -8,6 +8,8 @@ import Foundation
 import Combine
 class FoodViewModel {
     var foodListSubject = PassthroughSubject<[FoodModel], Never>()
+    var subscriptions: Set<AnyCancellable> = []
+    var passedFoodItem: [FoodModel]?
     private var foodCard = [
         FoodModel(title: "Eggs", image: "person.fill"),
         FoodModel(title: "Chicken", image: "person.fill"),
@@ -24,10 +26,18 @@ class FoodViewModel {
     ]
     init() {
         fetchFoodData()
+        subscribeOnSubjectValue()
     }
     private func fetchFoodData() {
-        DispatchQueue.main.async {
+        DispatchQueue.main.async { [weak self] in
+            guard let self = self else {return}
             self.foodListSubject.send(self.foodCard)
         }
+    }
+    private func subscribeOnSubjectValue() {
+        foodListSubject.sink { [weak self] foodModel in
+            guard let self = self else {return}
+            self.passedFoodItem = foodModel
+        }.store(in: &subscriptions)
     }
 }

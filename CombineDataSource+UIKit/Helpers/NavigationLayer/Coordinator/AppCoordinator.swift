@@ -5,6 +5,7 @@
 //  Created by AliFayed on 14/02/2023.
 //
 import UIKit
+import SafariServices
 class AppCoordinator: Coordinator {
     var childCoordinators = [Coordinator]()
     var navigationController: UINavigationController
@@ -25,5 +26,13 @@ class AppCoordinator: Coordinator {
         viewModel.foodName = foodName
         vc.bind(viewModel: viewModel, coordinator: self)
         navigationController.pushViewController(vc, animated: true)
+    }
+    func presentSafariVC(foodName: String) {
+        if let url = URL(string: "https://en.wikipedia.org/wiki/\(foodName)") {
+              let config = SFSafariViewController.Configuration()
+              config.entersReaderIfAvailable = true
+              let vc = SFSafariViewController(url: url, configuration: config)
+            self.navigationController.pushViewController(vc, animated: true)
+        }
     }
 }

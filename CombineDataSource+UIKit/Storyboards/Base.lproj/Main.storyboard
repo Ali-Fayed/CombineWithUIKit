@@ -62,16 +62,30 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FcB-ZV-KSm">
+                                <rect key="frame" x="121" y="575" width="146" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="146" id="Iah-gP-Ies"/>
+                                    <constraint firstAttribute="height" constant="49" id="Oqb-vq-pCw"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Open Wiki"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="oac-dM-vPm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="em8-X5-D0U" firstAttribute="centerX" secondItem="ZLP-tz-68L" secondAttribute="centerX" id="6jA-lh-B5e"/>
+                            <constraint firstItem="FcB-ZV-KSm" firstAttribute="top" secondItem="em8-X5-D0U" secondAttribute="bottom" constant="133.33000000000001" id="87h-Ak-jDs"/>
+                            <constraint firstItem="oac-dM-vPm" firstAttribute="trailing" secondItem="FcB-ZV-KSm" secondAttribute="trailing" constant="126" id="K0e-2s-f4c"/>
+                            <constraint firstItem="FcB-ZV-KSm" firstAttribute="leading" secondItem="oac-dM-vPm" secondAttribute="leading" constant="121" id="K2N-BI-2qf"/>
                             <constraint firstItem="em8-X5-D0U" firstAttribute="centerY" secondItem="ZLP-tz-68L" secondAttribute="centerY" id="Pfk-AS-XHA"/>
+                            <constraint firstItem="oac-dM-vPm" firstAttribute="bottom" secondItem="FcB-ZV-KSm" secondAttribute="bottom" constant="194" id="m53-pD-xt1"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="detailsLabel" destination="em8-X5-D0U" id="DjH-7Z-1Xv"/>
+                        <outlet property="searchButton" destination="FcB-ZV-KSm" id="fue-oN-ZFX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iuE-QC-nTi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

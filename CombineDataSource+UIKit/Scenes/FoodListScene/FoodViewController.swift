@@ -38,14 +38,10 @@ class FoodViewController: CustomViewController<FoodViewModel, AppCoordinator> {
     private func subscribeOnDidSelectRow() {
         guard let coordinator = self.coordinator else {return}
         guard let viewModel = self.viewModel else {return}
-        var passedFoodItem: [FoodModel]?
-        viewModel.foodListSubject.sink { foodModel in
-            passedFoodItem = foodModel
-        }.store(in: &subscriptions)
         tableView.didSelectRowPublisher
           .sink(receiveValue: { [weak self] indexPath in
              guard let self = self else {return}
-             guard let passedFoodItem = passedFoodItem else {return}
+             guard let passedFoodItem = viewModel.passedFoodItem else {return}
              self.tableView.deselectRow(at: indexPath, animated: true)
              coordinator.presentDetailsVC(foodName: passedFoodItem[indexPath.row].title)
        }).store(in: &subscriptions)
