@@ -8,8 +8,8 @@ import Foundation
 import Combine
 class FoodViewModel {
     var foodListSubject = PassthroughSubject<[FoodModel], Never>()
-    var subscriptions: Set<AnyCancellable> = []
     var passedFoodItem: [FoodModel]?
+    private var subscriptions: Set<AnyCancellable> = []
     private var foodCard = [
         FoodModel(title: "Eggs", image: "person.fill"),
         FoodModel(title: "Chicken", image: "person.fill"),

@@ -23,6 +23,7 @@ class FoodViewController: CustomViewController<FoodViewModel, AppCoordinator> {
     }
     // MARK: - TableView
     private func tableViewConfigurations() {
+        tableView.registerCellNib(cellClass: FoodCustomCell.self)
         bindTableViewDataSource()
         subscribeOnDidSelectRow()
         subscribeTableViewRefresh()
@@ -30,9 +31,8 @@ class FoodViewController: CustomViewController<FoodViewModel, AppCoordinator> {
     private func bindTableViewDataSource() {
         guard let viewModel = viewModel else {return}
         viewModel.foodListSubject
-            .bind(subscriber: tableView.rowsSubscriber(cellIdentifier: "foodCell", cellType: UITableViewCell.self, cellConfig: { cell, indexPath, foodModel in
-                cell.textLabel?.text = foodModel.title
-                cell.imageView?.image = UIImage(systemName: foodModel.image)
+            .bind(subscriber: tableView.rowsSubscriber(cellIdentifier: FoodCustomCell.identifier, cellType: FoodCustomCell.self, cellConfig: { cell, indexPath, foodModel in
+                cell.setData(foodModel: foodModel)
         })).store(in: &subscriptions)
     }
     private func subscribeOnDidSelectRow() {
