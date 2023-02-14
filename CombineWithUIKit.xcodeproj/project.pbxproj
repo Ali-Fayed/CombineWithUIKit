@@ -30,7 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		EAEDC276299BABEE00133C5A /* CombineDataSource+UIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CombineDataSource+UIKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAEDC276299BABEE00133C5A /* CombineWithUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CombineWithUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAEDC279299BABEE00133C5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAEDC27B299BABEE00133C5A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EAEDC27D299BABEE00133C5A /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
@@ -68,7 +68,7 @@
 		EAEDC26D299BABEE00133C5A = {
 			isa = PBXGroup;
 			children = (
-				EAEDC278299BABEE00133C5A /* CombineDataSource+UIKit */,
+				EAEDC278299BABEE00133C5A /* CombineWithUIKit */,
 				EAEDC277299BABEE00133C5A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -76,12 +76,12 @@
 		EAEDC277299BABEE00133C5A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EAEDC276299BABEE00133C5A /* CombineDataSource+UIKit.app */,
+				EAEDC276299BABEE00133C5A /* CombineWithUIKit.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EAEDC278299BABEE00133C5A /* CombineDataSource+UIKit */ = {
+		EAEDC278299BABEE00133C5A /* CombineWithUIKit */ = {
 			isa = PBXGroup;
 			children = (
 				EAEDC2AB299BAF7E00133C5A /* AppDelegate */,
@@ -91,7 +91,7 @@
 				EAEDC2AE299BAFA000133C5A /* Assets */,
 				EAEDC287299BABF000133C5A /* Info.plist */,
 			);
-			path = "CombineDataSource+UIKit";
+			path = CombineWithUIKit;
 			sourceTree = "<group>";
 		};
 		EAEDC2A0299BAF2F00133C5A /* NavigationLayer */ = {
@@ -205,9 +205,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EAEDC275299BABEE00133C5A /* CombineDataSource+UIKit */ = {
+		EAEDC275299BABEE00133C5A /* CombineWithUIKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EAEDC28A299BABF000133C5A /* Build configuration list for PBXNativeTarget "CombineDataSource+UIKit" */;
+			buildConfigurationList = EAEDC28A299BABF000133C5A /* Build configuration list for PBXNativeTarget "CombineWithUIKit" */;
 			buildPhases = (
 				EAEDC272299BABEE00133C5A /* Sources */,
 				EAEDC273299BABEE00133C5A /* Frameworks */,
@@ -217,14 +217,14 @@
 			);
 			dependencies = (
 			);
-			name = "CombineDataSource+UIKit";
+			name = CombineWithUIKit;
 			packageProductDependencies = (
 				EAEDC298299BAEB300133C5A /* Swinject */,
 				EAEDC29B299BAED900133C5A /* CombineDataSources */,
 				EAEDC29E299BAF1C00133C5A /* CombineCocoa */,
 			);
 			productName = "CombineDataSource+UIKit";
-			productReference = EAEDC276299BABEE00133C5A /* CombineDataSource+UIKit.app */;
+			productReference = EAEDC276299BABEE00133C5A /* CombineWithUIKit.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -242,7 +242,7 @@
 					};
 				};
 			};
-			buildConfigurationList = EAEDC271299BABEE00133C5A /* Build configuration list for PBXProject "CombineDataSource+UIKit" */;
+			buildConfigurationList = EAEDC271299BABEE00133C5A /* Build configuration list for PBXProject "CombineWithUIKit" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -260,7 +260,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EAEDC275299BABEE00133C5A /* CombineDataSource+UIKit */,
+				EAEDC275299BABEE00133C5A /* CombineWithUIKit */,
 			);
 		};
 /* End PBXProject section */
@@ -445,7 +445,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2JM7W65QBL;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "CombineDataSource+UIKit/Info.plist";
+				INFOPLIST_FILE = CombineWithUIKit/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -473,7 +473,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2JM7W65QBL;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "CombineDataSource+UIKit/Info.plist";
+				INFOPLIST_FILE = CombineWithUIKit/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -495,7 +495,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EAEDC271299BABEE00133C5A /* Build configuration list for PBXProject "CombineDataSource+UIKit" */ = {
+		EAEDC271299BABEE00133C5A /* Build configuration list for PBXProject "CombineWithUIKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EAEDC288299BABF000133C5A /* Debug */,
@@ -504,7 +504,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EAEDC28A299BABF000133C5A /* Build configuration list for PBXNativeTarget "CombineDataSource+UIKit" */ = {
+		EAEDC28A299BABF000133C5A /* Build configuration list for PBXNativeTarget "CombineWithUIKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EAEDC28B299BABF000133C5A /* Debug */,
