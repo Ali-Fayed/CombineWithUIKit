@@ -9,21 +9,46 @@
 /* Begin PBXBuildFile section */
 		EAEDC27A299BABEE00133C5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEDC279299BABEE00133C5A /* AppDelegate.swift */; };
 		EAEDC27C299BABEE00133C5A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEDC27B299BABEE00133C5A /* SceneDelegate.swift */; };
-		EAEDC27E299BABEE00133C5A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEDC27D299BABEE00133C5A /* ViewController.swift */; };
+		EAEDC27E299BABEE00133C5A /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEDC27D299BABEE00133C5A /* FoodViewController.swift */; };
 		EAEDC281299BABEE00133C5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAEDC27F299BABEE00133C5A /* Main.storyboard */; };
 		EAEDC283299BABF000133C5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAEDC282299BABF000133C5A /* Assets.xcassets */; };
 		EAEDC286299BABF000133C5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAEDC284299BABF000133C5A /* LaunchScreen.storyboard */; };
+		EAEDC28E299BAC6D00133C5A /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEDC28D299BAC6D00133C5A /* CustomViewController.swift */; };
+		EAEDC290299BACED00133C5A /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEDC28F299BACED00133C5A /* AppCoordinator.swift */; };
+		EAEDC292299BAD0E00133C5A /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEDC291299BAD0E00133C5A /* Coordinator.swift */; };
+		EAEDC294299BAD4200133C5A /* FoodDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEDC293299BAD4200133C5A /* FoodDetailViewController.swift */; };
+		EAEDC296299BADD900133C5A /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEDC295299BADD900133C5A /* Storyboarded.swift */; };
+		EAEDC299299BAEB300133C5A /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = EAEDC298299BAEB300133C5A /* Swinject */; };
+		EAEDC29C299BAED900133C5A /* CombineDataSources in Frameworks */ = {isa = PBXBuildFile; productRef = EAEDC29B299BAED900133C5A /* CombineDataSources */; };
+		EAEDC29F299BAF1C00133C5A /* CombineCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = EAEDC29E299BAF1C00133C5A /* CombineCocoa */; };
+		EAEDC2A3299BAF5500133C5A /* CustomVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEDC2A2299BAF5500133C5A /* CustomVC.swift */; };
+		EAEDC2A7299BAF6A00133C5A /* FoodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEDC2A6299BAF6A00133C5A /* FoodViewModel.swift */; };
+		EAEDC2A9299BAF7000133C5A /* FoodDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEDC2A8299BAF7000133C5A /* FoodDetailsViewModel.swift */; };
+		EAEDC2B0299BB97E00133C5A /* FoodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEDC2AF299BB97E00133C5A /* FoodModel.swift */; };
+		EAF7BE30299BC7E100A9F9C1 /* AppStoryboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF7BE2F299BC7E100A9F9C1 /* AppStoryboards.swift */; };
+		EAF7BE34299BC8D400A9F9C1 /* NavLayerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF7BE33299BC8D400A9F9C1 /* NavLayerConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EAEDC276299BABEE00133C5A /* CombineDataSource+UIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CombineDataSource+UIKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAEDC279299BABEE00133C5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAEDC27B299BABEE00133C5A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EAEDC27D299BABEE00133C5A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EAEDC27D299BABEE00133C5A /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
 		EAEDC280299BABEE00133C5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EAEDC282299BABF000133C5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAEDC285299BABF000133C5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EAEDC287299BABF000133C5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAEDC28D299BAC6D00133C5A /* CustomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
+		EAEDC28F299BACED00133C5A /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		EAEDC291299BAD0E00133C5A /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		EAEDC293299BAD4200133C5A /* FoodDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailViewController.swift; sourceTree = "<group>"; };
+		EAEDC295299BADD900133C5A /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		EAEDC2A2299BAF5500133C5A /* CustomVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomVC.swift; sourceTree = "<group>"; };
+		EAEDC2A6299BAF6A00133C5A /* FoodViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewModel.swift; sourceTree = "<group>"; };
+		EAEDC2A8299BAF7000133C5A /* FoodDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailsViewModel.swift; sourceTree = "<group>"; };
+		EAEDC2AF299BB97E00133C5A /* FoodModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodModel.swift; sourceTree = "<group>"; };
+		EAF7BE2F299BC7E100A9F9C1 /* AppStoryboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoryboards.swift; sourceTree = "<group>"; };
+		EAF7BE33299BC8D400A9F9C1 /* NavLayerConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavLayerConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +56,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAEDC299299BAEB300133C5A /* Swinject in Frameworks */,
+				EAEDC29F299BAF1C00133C5A /* CombineCocoa in Frameworks */,
+				EAEDC29C299BAED900133C5A /* CombineDataSources in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +84,122 @@
 		EAEDC278299BABEE00133C5A /* CombineDataSource+UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				EAEDC279299BABEE00133C5A /* AppDelegate.swift */,
-				EAEDC27B299BABEE00133C5A /* SceneDelegate.swift */,
-				EAEDC27D299BABEE00133C5A /* ViewController.swift */,
-				EAEDC27F299BABEE00133C5A /* Main.storyboard */,
-				EAEDC282299BABF000133C5A /* Assets.xcassets */,
-				EAEDC284299BABF000133C5A /* LaunchScreen.storyboard */,
+				EAEDC2AB299BAF7E00133C5A /* AppDelegate */,
+				EAEDC2AA299BAF7600133C5A /* Scenes */,
+				EAEDC2AC299BAF8B00133C5A /* Helpers */,
+				EAEDC2AD299BAF9300133C5A /* Storyboards */,
+				EAEDC2AE299BAFA000133C5A /* Assets */,
 				EAEDC287299BABF000133C5A /* Info.plist */,
 			);
 			path = "CombineDataSource+UIKit";
+			sourceTree = "<group>";
+		};
+		EAEDC2A0299BAF2F00133C5A /* NavigationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				EAF7BE31299BC7F700A9F9C1 /* Storyboarded */,
+				EAF7BE32299BC80000A9F9C1 /* Coordinator */,
+				EAF7BE35299BC90600A9F9C1 /* Other */,
+			);
+			path = NavigationLayer;
+			sourceTree = "<group>";
+		};
+		EAEDC2A1299BAF3A00133C5A /* CustomVC */ = {
+			isa = PBXGroup;
+			children = (
+				EAEDC2A2299BAF5500133C5A /* CustomVC.swift */,
+				EAEDC28D299BAC6D00133C5A /* CustomViewController.swift */,
+			);
+			path = CustomVC;
+			sourceTree = "<group>";
+		};
+		EAEDC2A4299BAF5900133C5A /* FoodListScene */ = {
+			isa = PBXGroup;
+			children = (
+				EAEDC2AF299BB97E00133C5A /* FoodModel.swift */,
+				EAEDC2A6299BAF6A00133C5A /* FoodViewModel.swift */,
+				EAEDC27D299BABEE00133C5A /* FoodViewController.swift */,
+			);
+			path = FoodListScene;
+			sourceTree = "<group>";
+		};
+		EAEDC2A5299BAF5F00133C5A /* FoodDetailsScene */ = {
+			isa = PBXGroup;
+			children = (
+				EAEDC2A8299BAF7000133C5A /* FoodDetailsViewModel.swift */,
+				EAEDC293299BAD4200133C5A /* FoodDetailViewController.swift */,
+			);
+			path = FoodDetailsScene;
+			sourceTree = "<group>";
+		};
+		EAEDC2AA299BAF7600133C5A /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				EAEDC2A4299BAF5900133C5A /* FoodListScene */,
+				EAEDC2A5299BAF5F00133C5A /* FoodDetailsScene */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		EAEDC2AB299BAF7E00133C5A /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				EAEDC279299BABEE00133C5A /* AppDelegate.swift */,
+				EAEDC27B299BABEE00133C5A /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		EAEDC2AC299BAF8B00133C5A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				EAEDC2A1299BAF3A00133C5A /* CustomVC */,
+				EAEDC2A0299BAF2F00133C5A /* NavigationLayer */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		EAEDC2AD299BAF9300133C5A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				EAEDC27F299BABEE00133C5A /* Main.storyboard */,
+				EAEDC284299BABF000133C5A /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		EAEDC2AE299BAFA000133C5A /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				EAEDC282299BABF000133C5A /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		EAF7BE31299BC7F700A9F9C1 /* Storyboarded */ = {
+			isa = PBXGroup;
+			children = (
+				EAF7BE2F299BC7E100A9F9C1 /* AppStoryboards.swift */,
+				EAEDC295299BADD900133C5A /* Storyboarded.swift */,
+			);
+			path = Storyboarded;
+			sourceTree = "<group>";
+		};
+		EAF7BE32299BC80000A9F9C1 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				EAEDC291299BAD0E00133C5A /* Coordinator.swift */,
+				EAEDC28F299BACED00133C5A /* AppCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		EAF7BE35299BC90600A9F9C1 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				EAF7BE33299BC8D400A9F9C1 /* NavLayerConstants.swift */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +218,11 @@
 			dependencies = (
 			);
 			name = "CombineDataSource+UIKit";
+			packageProductDependencies = (
+				EAEDC298299BAEB300133C5A /* Swinject */,
+				EAEDC29B299BAED900133C5A /* CombineDataSources */,
+				EAEDC29E299BAF1C00133C5A /* CombineCocoa */,
+			);
 			productName = "CombineDataSource+UIKit";
 			productReference = EAEDC276299BABEE00133C5A /* CombineDataSource+UIKit.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +251,11 @@
 				Base,
 			);
 			mainGroup = EAEDC26D299BABEE00133C5A;
+			packageReferences = (
+				EAEDC297299BAEB300133C5A /* XCRemoteSwiftPackageReference "Swinject" */,
+				EAEDC29A299BAED900133C5A /* XCRemoteSwiftPackageReference "CombineDataSources" */,
+				EAEDC29D299BAF1C00133C5A /* XCRemoteSwiftPackageReference "CombineCocoa" */,
+			);
 			productRefGroup = EAEDC277299BABEE00133C5A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,9 +283,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAEDC27E299BABEE00133C5A /* ViewController.swift in Sources */,
+				EAEDC2A7299BAF6A00133C5A /* FoodViewModel.swift in Sources */,
+				EAEDC28E299BAC6D00133C5A /* CustomViewController.swift in Sources */,
+				EAEDC27E299BABEE00133C5A /* FoodViewController.swift in Sources */,
+				EAEDC2B0299BB97E00133C5A /* FoodModel.swift in Sources */,
+				EAEDC292299BAD0E00133C5A /* Coordinator.swift in Sources */,
 				EAEDC27A299BABEE00133C5A /* AppDelegate.swift in Sources */,
+				EAEDC294299BAD4200133C5A /* FoodDetailViewController.swift in Sources */,
+				EAF7BE34299BC8D400A9F9C1 /* NavLayerConstants.swift in Sources */,
+				EAEDC290299BACED00133C5A /* AppCoordinator.swift in Sources */,
+				EAEDC2A9299BAF7000133C5A /* FoodDetailsViewModel.swift in Sources */,
+				EAF7BE30299BC7E100A9F9C1 /* AppStoryboards.swift in Sources */,
 				EAEDC27C299BABEE00133C5A /* SceneDelegate.swift in Sources */,
+				EAEDC2A3299BAF5500133C5A /* CustomVC.swift in Sources */,
+				EAEDC296299BADD900133C5A /* Storyboarded.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +514,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EAEDC297299BAEB300133C5A /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		EAEDC29A299BAED900133C5A /* XCRemoteSwiftPackageReference "CombineDataSources" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CombineCommunity/CombineDataSources";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.5;
+			};
+		};
+		EAEDC29D299BAF1C00133C5A /* XCRemoteSwiftPackageReference "CombineCocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CombineCommunity/CombineCocoa";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EAEDC298299BAEB300133C5A /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EAEDC297299BAEB300133C5A /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+		EAEDC29B299BAED900133C5A /* CombineDataSources */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EAEDC29A299BAED900133C5A /* XCRemoteSwiftPackageReference "CombineDataSources" */;
+			productName = CombineDataSources;
+		};
+		EAEDC29E299BAF1C00133C5A /* CombineCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EAEDC29D299BAF1C00133C5A /* XCRemoteSwiftPackageReference "CombineCocoa" */;
+			productName = CombineCocoa;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EAEDC26E299BABEE00133C5A /* Project object */;
 }
